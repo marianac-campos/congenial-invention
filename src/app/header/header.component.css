@@ -1,0 +1,108 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+
+    align-items: stretch;
+}
+
+.leds {
+    display: flex;
+
+    padding-left: 12px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 0fr 2fr;
+}
+  
+.line-one {
+    border-bottom: 4px groove #c23636;
+    border-radius: 2px;
+    transform: translateX(8px);
+}
+
+.line-two {
+    width: 100px;
+    height: 50px;
+    border-bottom: 4px groove #c23636; 
+    transform: rotate(330deg) translateY(-25px);
+}
+  
+.line-three {
+    border-top: 4px groove #c23636;
+    border-radius: 2px 0;
+    transform: translateX(-8px);
+}
+
+.button-blue {  
+    width: 64px;
+    height: 64px;
+
+    background: radial-gradient(circle, 
+    rgba(159,219,252,1) 0%, rgba(49,167,248,1) 29%, rgba(25,106,156,1) 94%); 
+    
+    border-color: white;
+    border-width: 6px;
+}
+
+.button-blue:hover {  
+    background: radial-gradient(circle, 
+    rgba(149,212,248,1) 0%, rgba(71,171,255,1) 29%, rgba(41,162,229,1) 94%); 
+}
+
+.circle {
+    border-radius: 50px;
+}
+
+.return {
+    width: 40px;
+    height: 40px;
+    
+    background: radial-gradient(circle, rgba(90,90,90,1) 13%, rgba(53,53,53,1) 46%, rgba(37,37,37,1) 97%);
+
+    border-color: transparent;
+}
+
+.return:hover {    
+    background: radial-gradient(circle, rgba(132, 129, 129, 1) 13%, rgba(75, 74, 74, 1) 46%, rgba(56, 55, 55, 1) 97%); 
+
+    border-color: transparent;
+}
+
+.topo {
+    padding: 24px;
+}
+
+.led-red {
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+
+    border-width: 1px;
+    border-color: white;
+
+    background: linear-gradient(140deg, rgba(234,171,171,1) 8%, rgba(255,48,48,1) 32%, rgba(128,1,1,1) 92%); 
+}
+
+.led-yellow {
+    width: 12px;
+    height: 12px;
+    margin: 2px;
+
+    border-color: white;
+    border-width: 1px;
+
+    background: linear-gradient(140deg, rgba(255,243,198,1) 13%, rgba(255,206,33,1) 46%, rgba(222,189,0,1) 97%); 
+}
+
+.led-green {
+    width: 12px;
+    height: 12px;
+    margin: 2px; 
+
+    border-color: white;
+    border-width: 1px;
+
+    background: linear-gradient(140deg, rgba(190,255,190,1) 8%, rgba(60,251,60,1) 27%, rgba(0,151,0,1) 81%);    
+}
